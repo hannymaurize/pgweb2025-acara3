@@ -31,7 +31,7 @@
                 <div class="row text-center">
                     <div class="col">
                         <button type="button" class="btn btn-primary" onclick="tambah()"><b>+</b></button>
-                        <button type="button" class="btn btn-secondary" onclick="Kurang()"><b>-</b></button>
+                        <button type="button" class="btn btn-secondary" onclick="kurang()"><b>-</b></button>
                         <button type="button" class="btn btn-success" onclick="kali()"><b>*</b></button>
                         <button type="button" class="btn btn-danger" onclick="bagi()"><b>/</b></button>
                     </div>
@@ -76,13 +76,15 @@
             console.log(hasil_kurang);
             document.getElementById('hasil').innerHTML = "Hasil: " + hasil_kurang;
         }
+        // fungsi untuk perkalian
         function kali() {
-            var hasil_kali = parseFloat(angka1.value) - parseFloat(angka2.value);
+            var hasil_kali = parseFloat(angka1.value) * parseFloat(angka2.value);
             console.log(hasil_kali);
             document.getElementById('hasil').innerHTML = "Hasil: " + hasil_kali;
         }
+        // Fungsi untuk Pembagian
         function bagi() {
-            var hasil_bagi = parseFloat(angka1.value) - parseFloat(angka2.value);
+            var hasil_bagi = parseFloat(angka1.value) / parseFloat(angka2.value);
             console.log(hasil_bagi);
             document.getElementById('hasil').innerHTML = "Hasil: " + hasil_bagi;
         }
